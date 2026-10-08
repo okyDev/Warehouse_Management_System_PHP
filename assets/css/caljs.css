@@ -1,0 +1,79 @@
+.caltitle{
+align-items:center;
+text-align:center;
+color:black;
+background-color:white;
+}
+
+.dark-mode .caltitle{
+color:white;
+background-color:#120B21;
+border: 1px solid white;
+}
+
+
+.calmain {
+    margin: 10px;
+    padding: 5px 7px 5px;
+}
+
+.dark-mode .calmain{
+background-color:#120B21;
+}
+.dark-mode .modal-content{
+background-color:#120B21;
+color:black;
+}
+
+
+.calmain input {
+    text-align: right;
+    background-color: white;
+    width: 330px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.calmain table {
+    display: inline-block;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.caldisplaytable {
+    display: table;
+}
+
+.caldisplaytable-cell {
+    display: table-cell;
+}
+  
+.calbutton {
+    width: 60px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.calblackbutton { 
+    background-color: black; 
+    color: white;
+}
+
+.calgreenbutton {
+    background-color: #91ff7d;
+}
+
+.calgreybutton {
+    background-color: #cccccc;
+}
+
+.calbluebutton {
+    background-color: #6288f3;
+}
+
+.calredbutton {
+    background-color: #f76767;
+}

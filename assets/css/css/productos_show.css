@@ -1,0 +1,330 @@
+/* TABLA SHOW*/
+
+
+
+.table-container { 
+max-width: 1200px; 
+margin: 20px auto; 
+padding: 0 15px; }
+
+.table-container-product-card { 
+border: 1px solid #ddd; 
+border-radius: 5px; 
+padding: 15px; 
+margin: 10px; }
+
+
+
+.table-container-button-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.table-container-button-label:hover {
+    background-color: #0056b3;
+}
+
+.table-container-button-label:active {
+    background-color: #004085;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HIDDEN */
+
+.table-hidden {
+    top: 10vh;
+    left: 40vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 170vh;
+    height: 100vh;
+    background-color: #1a2238; /* Fondo oscuro */
+    border-radius: 30px;
+    opacity: 0; /* Se puede establecer en 1 cuando esté visible */
+    visibility: hidden; /* Cambiar a visible cuando sea necesario */
+    transition: opacity 0.3s;
+    z-index: 1000;
+    overflow-y: auto;
+    justify-content: flex-start; /* Alinea elementos al inicio */
+    padding: 1rem; /* Agregar espacio interno */
+    color: #ffffff; /* Texto en blanco */
+}
+
+.table-hidden-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    grid-gap: 1rem; /* Espacio entre las columnas */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    margin-top: 1rem; /* Espacio desde la parte superior */
+}
+
+.table-hidden-row {
+    border: 1px solid #ccc; /* Borde de la tabla */
+    background-color: #2a3138; /* Fondo de cada fila */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; /* Espaciado interno */
+    color: white; /* Texto en blanco */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+/*
+.table-hidden {
+  top: 10vh;
+  left:40vh;
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  
+  
+  width: 170vh;
+  height: 100vh;
+  background-color:#1a2238; /*#f9f9f9;  Fondo de la tabla 
+  background-color: #131a24;  Fondo oscuro 
+  border-radius: 30px;
+  
+  opacity: 0;
+	visibility: hidden;
+  transition: opacity 0.3s;
+  z-index: 1000;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+   /*
+  justify-content: center;
+  align-items: center;
+	border-radius: 20px; Bordes redondeados 
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra más marcada 
+	  border: 5px solid #ccc;  Borde de la tabla 
+ color: white;
+ display: flex;
+ flex-direction: column;
+ padding: 2rem;
+ background-color: #f9f9f9; / Fondo de la tabla 
+	*
+  
+  color: #ffffff; /* Texto en blanco 
+
+}
+
+
+.table-hidden-form{
+margin-top:100vh;
+margin-left:0;
+display: grid;
+/*grid-template-columns: repeat(2);  Dos columnas de igual ancho 
+justify-content: center;
+ * 
+grid-template-rows: 95vh 90vh;
+grid-template-columns: 70vh 60vh;
+grid-auto-flow: column; 
+}
+
+.table-hidden-row{
+flex: 0 0 50%; /* Cada elemento ocupa el 50% del ancho del contenedor *
+border: 1px solid #ccc; /* Borde de la tabla 
+ color: white;
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+
+
+*/
+
+
+.table-hidden-in{
+margin-bottom:10px;
+}
+
+
+
+.table-hidden-title{
+font-weight: bold; /* Negrita para los títulos */
+   /* color: black;  Color del texto */
+    display: block; /* Hacer que el label ocupe toda la celda */
+    font-size:20px;
+    background-color: #007BFF; /* Color de encabezados */
+    color: #ffffff; /* Color de texto en encabezados */
+}
+
+.table-hidden-text{
+font-weight: bold; /* Negrita para los títulos */
+    color: black; /* Color del texto */
+    display: block; /* Hacer que el label ocupe toda la celda */
+    font-size:16px;
+    background-color: white;
+    margin-bottom:2px;
+}
+
+
+
+
+
+.table-hidden-button_box{
+display: flex;
+gap:5px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group > .form-control,
+.input-group > .form-control-plaintext {
+    position: relative;
+    flex: 1 1 auto; /* Permite que el elemento se expanda */
+    min-width: 0;  /* Asegura que el ancho mínimo se ajuste */
+}
+
+.input-group > .input-group-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; /* Elimina margen inferior */
+}
+
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;  /* Color de fondo blanco */
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;  /* Color de borde al enfocar */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);  /* Sombra al enfocar */
+}
+
+
+.table-hidden-row textarea {
+    width: 30vh; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    font-size: 16px; /* Tamaño de fuente */
+    resize: vertical; /* Permitir redimensionar solo verticalmente */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+.table-hidden-row textarea:focus {
+    border-color: #007BFF; /* Color del borde al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+}
+
+.table-hidden-row span {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0; 
+    font-size: 1rem; 
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057; 
+    background-color: #e9ecef;  /* Color de fondo por defecto */
+    border: 1px solid #ced4da; 
+    border-radius: 0.25rem;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important; /* Color de fondo claro */
+}
+
+
+.table-hidden-row input {
+    width: 30vh; /* Ancho completo del input */
+    padding: 8px; /* Espaciado interno del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.table-hidden-row input:focus {
+    border-color: #007BFF; /* Color del borde al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+}
+
+.table-hidden-money_box{
+	display: flex;
+}
+
+.table-hidden-money_box select{
+width:100px;
+}
+
+
+
+
+.table-hidden-button_box button {
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+.table-hidden-button_box button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+.table-hidden-button_box button:active {
+    background-color: #004085; /* Color de fondo al hacer clic */
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+}
+

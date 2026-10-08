@@ -1,0 +1,153 @@
+/* new ajust global in a way to say */
+:root {
+            --sidebar-bg: #1a2238;
+            --sidebar-accent: #ff6a3d;
+            --toolbar-bg: #ffffff;
+            --content-bg: #f5f7fa;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+
+
+
+
+body{
+background-color:--card-bg: #ffffff;
+display: flex; /* Cambiamos a flexbox */
+flex-direction: column;
+margin:0px;
+max-height:90vh;
+}
+
+
+    
+
+.box {
+   	display: grid;
+   	position:relative;
+    /*grid-template-columns: repeat(2, 1fr);  Dos columnas iguales */
+    
+    
+    width: 100%; 
+    height:200px;
+    
+    /* Ocupa el ancho completo del contenedor 
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 1000px; /* Espacio entre las columnas */
+    
+    
+    margin:0;
+   
+    
+}
+
+
+
+.box-main {
+    /*overflow-y: auto;  Scroll vertical */
+    top:calc(100% - 89vh);
+    height: auto;
+    width:calc(100% - 45vh);
+    /* Ancho de la barra lateral 
+     * transform: traslate(500vh,20px);
+     * */
+    position:absolute;
+    left:calc(100% - 170vh);
+    
+    
+		
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    align-items: center;
+   
+		
+}
+
+
+
+/*Barra sidebar
+.box {
+	display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+/*
+ display: flex;
+ min-height: 100vh;
+ min-width: 100vh;
+ flex-direction: column;
+ min-height: 100vh;
+				margin:0px;
+				
+}
+
+.sidebar {
+   
+   grid-area: sidebar;
+            background: var(--sidebar-bg);
+            color: white;
+            padding: 1.5rem 0;
+            height: 100%;
+            overflow-y: auto;
+   /* background: var(--sidebar-bg);
+    color: white;
+    padding: 1.5rem 0; /* Puedes ajustar el padding si es necesario 
+    width: 240px; /* Ancho de la barra lateral /
+    min-height: 100vh; /* Altura mínima 
+    margin: 0; /* Elimina el margen 
+    left: 0; /* Alinea a la izquierda 
+}
+
+
+.dinamic_main{
+flex: 1;
+padding: 2rem;
+overflow-y: auto; /* Scroll vertical 
+}
+*/
+
+
+
+    .toolbar {
+						position: fixed;
+						display: flex;
+            justify-content: space-between;
+            align-items: center;
+            grid-area: toolbar;
+            z-index: 10;
+            
+            /*background: var(--toolbar-bg);*/
+            background: #2c3e50;
+						color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+           
+            padding: 0 1.5rem;
+            width:100%;
+            height:100%;
+						max-width:300vh;
+            max-height:10vh;
+        }
+        
+        
+        
+        .user-menu {
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .user-info{max-width:70px;}
+       
+       
+
+        
+        
+
+
+
+/* Toolbar Styles */
+    

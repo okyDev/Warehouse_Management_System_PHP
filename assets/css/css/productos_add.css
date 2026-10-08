@@ -1,0 +1,121 @@
+ /* Estilos personalizados para el formulario */
+
+.container { 
+		display: grid;
+    grid-template-columns: repeat(2); /* Dos columnas de igual ancho */
+    justify-content: center;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+				}
+				
+.row{
+flex: 0 0 50%; /* Cada elemento ocupa el 50% del ancho del contenedor */
+border: 1px solid #ccc; /* Borde de la tabla */
+border-radius: 40px;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ padding: 2rem;
+	}
+
+.row textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    font-size: 16px; /* Tamaño de fuente */
+    resize: vertical; /* Permitir redimensionar solo verticalmente */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+.row textarea:focus {
+    border-color: #007BFF; /* Color del borde al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+}
+	
+
+.productos_box{
+top:0;
+border: 5px solid #ccc; /* Borde de la tabla */
+ color: white;
+ display: flex;
+ flex-direction: column;
+ padding: 2rem;
+ background-color: #f9f9f9; /* Fondo de la tabla */
+	}
+
+.in{
+margin-bottom:10px;
+}
+
+
+.money_box{
+	display: flex;
+}
+
+.money_box select{
+width:100px;
+}
+
+
+
+
+
+.button_box{
+display: flex;
+gap:5px;
+}
+
+.button_box button {
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+.button_box button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+.button_box button:active {
+    background-color: #004085; /* Color de fondo al hacer clic */
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+}
+
+
+.row input {
+    width: 100%; /* Ancho completo del input */
+    padding: 8px; /* Espaciado interno del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.row input:focus {
+    border-color: #007BFF; /* Color del borde al enfocar */
+    outline: none; /* Quitar el contorno por defecto */
+}
+
+
+.title{
+font-weight: bold; /* Negrita para los títulos */
+   /* color: black;  Color del texto */
+    display: block; /* Hacer que el label ocupe toda la celda */
+    font-size:20px;
+     background-color: #007BFF; /* Color de encabezados */
+    color: #ffffff; /* Color de texto en encabezados */
+}
+
+.sub_title{
+font-weight: bold; /* Negrita para los títulos */
+    color: black; /* Color del texto */
+    display: block; /* Hacer que el label ocupe toda la celda */
+    font-size:16px;
+}

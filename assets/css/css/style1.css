@@ -1,0 +1,1447 @@
+/* Estilos generales */
+
+ * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+  /* FOOTER MEJORADO */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%; /* Cubre todo el ancho de la pantalla */
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            box-sizing: border-box;
+            pointer-events: none;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+            border-top: 2px solid #ffcc00;
+        }
+        
+        footer p {
+            display: inline-block;
+            padding-left: 100%; /* Empieza desde la derecha */
+            white-space: nowrap;
+            animation: slide 20s linear infinite;
+            font-size: 1.1rem;
+            color: #ffcc00;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        @keyframes slide {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+/* CELULARES*/
+
+/*MI IPHONE */
+@media (max-width: 480px) {
+
+  /*sweet alert*/
+.sweety-window{
+ width: 85% !important;
+ font-size: 1.5rem !important;
+ border-radius: 10px !important;
+}
+
+
+body{
+ display: flex;
+ min-height: 100vh;
+ overflow: hidden;
+}
+
+/*Aqui pondre todo lo referente al login box*/
+.login-box {
+ flex: 1;
+ background: #1a2238;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ padding: 2rem;
+ position: relative;
+}
+
+.login-box-content{
+ width: 100%;
+ height: 100%;
+}
+
+
+
+/*Input part*/
+
+input {
+  padding: 15px 15px 15px 45px;
+  border: none;
+  border-radius: 6px;
+  background: #232e4e;
+  color: white;
+  font-size: 1.8rem;
+  min-width:200px;
+  max-width:380px;
+  margin-left:-20px;
+}
+        
+input:focus {
+outline: 2px solid #ff6a3d;
+}
+
+input::placeholder {
+color: #9daaf2;
+ }
+
+ h1,h2,h3,h4,h5 {
+	top:0;
+	font-weight: 600;
+	font-size: 2.2rem;
+/*color: #9daaf2;*/
+ }
+ 
+.sub-letra{
+color: #9daaf2;
+margin-bottom: 2.5rem;
+font-size: 1.8rem;
+}
+ 
+ 
+/*USER PART*/
+
+
+.login-header{
+margin-bottom: 5.5rem;
+}
+
+.login-header h3{
+margin-top: 5.5rem;
+}
+
+
+.Input_user{
+margin-bottom: 2.5rem;
+position: relative;
+}
+
+.pass_part {
+margin-bottom: 2.5rem;
+position: relative;
+}
+
+.ver_pass{
+position: absolute;
+left: 340px;
+top: 50%;
+transform: translateY(-45%);
+color: #9daaf2;
+background: #232e4e;
+}
+
+
+.ver_pass img{
+width:40px;
+}
+
+
+.icons{
+filter: invert(0.7);
+position: absolute;
+left: -5px;
+top: 50%;
+transform: translateY(-45%);
+}
+.icons img{
+width:25px;
+}
+
+.icon_header{
+filter: invert(0.7);
+position: absolute;
+left: 20px;
+top:15px;
+}
+
+.icon_header img{
+width:90px;
+}
+
+
+
+
+/*BOTONES */
+
+button{
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 6px;
+background: #ff6a3d;
+color: white;
+font-weight: 600;
+font-size: 2rem;
+cursor: pointer;
+transition: background 0.3s;
+max-width:400px;
+}
+
+.negocio_info{
+display: none;
+}
+
+
+/*END HERE*/
+  footer {
+	height: 5rem;
+        }
+        
+        footer p {
+	font-size: 1.6rem;
+           
+        }
+
+
+}
+
+
+/* ================================================== */
+/* CELULARES GRANDES (481px a 767px) */
+/* ================================================== */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  /* Sweet Alert */
+  .sweety-window {
+    width: 85% !important;
+    font-size: 1.5rem !important;
+    border-radius: 10px !important;
+  }
+
+ 
+body{
+ display: flex;
+ min-height: 100vh;
+ overflow: hidden;
+ background: #1a2238;
+}
+
+/*Aqui pondre todo lo referente al login box*/
+.login-box {
+ left:10px;
+ flex: 1;
+ background: #1a2238;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ padding: 2rem;
+ position: relative;
+ width: 100%;
+ height: 100%;
+}
+
+.login-box-content{
+ width: 100%;
+ height: 100%;
+}
+
+
+
+/*Input part*/
+
+input {
+  padding: 15px 15px 15px 45px;
+  border: none;
+  border-radius: 6px;
+  background: #232e4e;
+  color: white;
+  font-size: 1.8rem;
+  min-width:200px;
+  max-width:470px;
+}
+        
+input:focus {
+outline: 2px solid #ff6a3d;
+}
+
+input::placeholder {
+color: #9daaf2;
+ }
+
+ h1,h2,h3,h4,h5 {
+	top:0;
+	font-weight: 600;
+	font-size: 2.2rem;
+/*color: #9daaf2;*/
+ }
+ 
+.sub-letra{
+color: #9daaf2;
+margin-bottom: 2.5rem;
+font-size: 1.8rem;
+}
+ 
+ 
+/*USER PART*/
+
+
+.login-header{
+margin-bottom: 5.5rem;
+}
+
+.login-header h3{
+margin-top: 5.5rem;
+}
+
+
+.Input_user{
+margin-bottom: 2.5rem;
+position: relative;
+}
+
+.pass_part {
+margin-bottom: 2.5rem;
+position: relative;
+}
+
+.ver_pass{
+position: absolute;
+left: 380px;
+top: 50%;
+transform: translateY(-45%);
+}
+.ver_pass img{
+width:50px;
+}
+
+
+.icons{
+filter: invert(0.7);
+position: absolute;
+left:10px;
+top: 50%;
+transform: translateY(-45%);
+}
+.icons img{
+width:25px;
+}
+
+.icon_header{
+filter: invert(0.7);
+position: absolute;
+left: 20px;
+top:15px;
+}
+
+.icon_header img{
+width:90px;
+}
+
+
+
+
+/*BOTONES */
+
+button{
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 6px;
+background: #ff6a3d;
+color: white;
+font-weight: 600;
+font-size: 2rem;
+cursor: pointer;
+transition: background 0.3s;
+max-width:400px;
+}
+
+.negocio_info{
+display: none;
+}
+
+  footer {
+	height: 5rem;
+        }
+        
+        footer p {
+	font-size: 1.6rem;
+           
+        }
+
+
+
+
+}
+
+
+/* ================================================== */
+/* TABLETS (768px a 1024px) */
+/* ================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /*sweet alert*/
+.sweety-window{
+ /*transform: translateY(-150px);  Ajuste fino para centrado vertical */
+ /*overflow: hidden;*/
+ width: 10vh !important;
+}
+
+ body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #f0f0f0; /* Fondo claro para contrastar */
+    color: black;
+  }
+
+  /* Login Box */
+  .login-box {
+    position: fixed; /* Fija la caja en la pantalla */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centrado vertical */
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos internos */
+    justify-content: center; /* Centra verticalmente los elementos internos */
+    width: 75%; /* Ancho más adecuado para un sidebar */
+    min-width:70%;
+    margin-left:25%;
+    height:100%;
+    min-height:99%;
+    /*max-width: 400px;  Ancho máximo para evitar que se expanda demasiado */
+    padding: 50px; /* Espaciado interno */
+    background-color: #131313; /* Color de fondo */
+    border: 3px solid #888;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+  }
+
+  .login-box h2 {
+    text-align: center;
+  }
+
+  .login-box label {
+    font-size: 1.35rem;
+  }
+
+  .login-box input {
+    width: 100%; /* Ancho relativo al contenedor */
+    max-width: 450px; /* Ancho máximo */
+    padding: 16px;
+    margin: 25px 0; /* Margen solo arriba y abajo */
+    border-radius: 20px;
+    border: none; /* Quita el borde por defecto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.22rem;
+  }
+
+  .login-box form {
+    margin-top: -40px; /* Espacio arriba del formulario */
+    width: 70%;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos internos */
+    justify-content: center; /* Centra verticalmente los elementos internos */
+  }
+
+  /* Icon Part */
+  .icon_part {
+	position:fixed;
+	display: flex;
+	margin-left:-550px;
+	margin-bottom:100px;
+  }
+  
+  .icon-profile {
+      width: 70px;
+      height: 70px;
+      background-image: url('../icons/icons8-profile-50.png');
+      background-size: cover;
+      filter: invert(1);
+ }
+
+  /* User Part */
+  .user_part {
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .user_part h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Más espacio debajo del título */
+  }
+
+  /* Password Part */
+  .pass_part {
+	display: inline-block;
+	align-items: center;
+    position: relative; /* Necesario para posicionar la imagen */
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pass_part label{
+  margin-left:-90px;
+  }
+
+  .ver_pass {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-23%);
+    width: 50%;
+  }
+  
+  
+  
+
+  /* Buttons */
+  .bottones_part {
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+  }
+
+  .bottones_part button {
+    margin-left: 5px;
+    width: 350px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color 0.3s; /* Efecto hover suave */
+  }
+
+  .bottones_part button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+  }
+
+
+/* */
+
+/*password vox 27-08-25*/
+
+
+/*END HERE*/
+
+
+
+
+
+header{
+	display: inline-block;
+	background: #fee;
+    padding: 1rem;
+    margin-right: 20px;
+    vertical-align: top; /* alinea en la misma línea de base */
+}
+
+header h1,h2,h3,h4,h5{
+	color:black;
+	font-size:30px;
+}
+
+  footer {
+	height: 2.9rem;
+        }
+        
+        footer p {
+	font-size: 1.6rem;
+           
+        }
+
+}
+
+
+/* ================================================== */
+/* LAPTOPS (1025px a 1440px) - MI PC
+/* ================================================== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+  /*sweet alert*/
+.sweety-window{
+ /*transform: translateY(-150px);  Ajuste fino para centrado vertical */
+ /*overflow: hidden;*/
+ width: 100vh !important;
+ position:fixed;
+ overflow: hidden;
+}
+
+
+body{
+ display: flex;
+ min-height: 100vh;
+ overflow: hidden;
+}
+
+/*Aqui pondre todo lo referente al login box*/
+.login-box {
+ flex: 1;
+ background: #1a2238;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ 
+ 
+ padding: 2rem;
+ position: relative;
+ max-width:650px;
+}
+
+.login-box-content{
+ width: 100%;
+ max-width: 400px;
+ margin-left:100px;
+}
+
+
+
+/*Input part*/
+
+input {
+  padding: 15px 15px 15px 45px;
+  border: none;
+  border-radius: 6px;
+  background: #232e4e;
+  color: white;
+  font-size: 1rem;
+  min-width:400px;
+}
+        
+input:focus {
+outline: 2px solid #ff6a3d;
+}
+
+input::placeholder {
+color: #9daaf2;
+ }
+
+ h1,h2,h3,h4,h5 {
+	top:0;
+	font-weight: 600;
+	font-size: 2.2rem;
+/*color: #9daaf2;*/
+ }
+ 
+.sub-letra{
+color: #9daaf2;
+margin-bottom: 2.5rem;
+font-size: 1.1rem;
+}
+ 
+ 
+/*USER PART*/
+
+
+.login-header{
+margin-bottom: 8.5rem;
+}
+
+
+.Input_user{
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.pass_part {
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.ver_pass{
+position: absolute;
+left: 344px;
+top: 50%;
+transform: translateY(-45%);
+color: #9daaf2;
+}
+
+.icons{
+filter: invert(0.7);
+position: absolute;
+left: 10px;
+top: 50%;
+transform: translateY(-45%);
+}
+.icons img{
+width:25px;
+oncontextmenu:return false;
+}
+
+.icon_header{
+filter: invert(0.7);
+position: absolute;
+left: 20px;
+top:15px;
+}
+
+.icon_header img{
+width:90px;
+}
+
+.ver_pass img{
+width:35px;
+}
+
+
+/*BOTONES */
+
+button{
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 6px;
+background: #ff6a3d;
+color: white;
+font-weight: 600;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.3s;
+max-width:400px;
+}
+
+/* */
+
+/*password vox 27-08-25*/
+
+/*END HERE*/
+
+.negocio_info{
+flex: 1;
+background: #f0f4f8;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+position: relative;
+}
+
+  footer {
+	height: 3rem;
+        }
+        
+        footer p {
+	font-size: 1.5rem;
+           
+        }
+        
+        
+        
+
+        
+}
+
+/* ================================================== */
+/* PC GRANDES (1441px en adelante) - DISEÑO LATERAL */
+/* ================================================== */
+/*PC AUN MIA 67%*/
+@media (min-width: 1441px) {
+
+  /*sweet alert*/
+.sweety-window{
+ width: 100vh !important;
+ font-size: 3.0rem !important;
+ border-radius: 22px !important;
+}
+
+
+body{
+ display: flex;
+ min-height: 100vh;
+ overflow: hidden;
+}
+
+/*Aqui pondre todo lo referente al login box*/
+.login-box {
+ flex: 1;
+ background: #1a2238;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ 
+ 
+ padding: 2rem;
+ position: relative;
+ max-width:800px;
+}
+
+.login-box-content{
+ width: 100%;
+ max-width: 500px;
+ margin-left:100px;
+}
+
+
+
+/*Input part*/
+
+input {
+  padding: 15px 15px 15px 45px;
+  border: none;
+  border-radius: 6px;
+  background: #232e4e;
+  color: white;
+  font-size: 1.6rem;
+  min-width:400px;
+}
+        
+input:focus {
+outline: 2px solid #ff6a3d;
+}
+
+input::placeholder {
+color: #9daaf2;
+ }
+
+ h1,h2,h3,h4,h5 {
+	top:0;
+	font-weight: 600;
+	font-size: 2.7rem;
+/*color: #9daaf2;*/
+ }
+ 
+.sub-letra{
+color: #9daaf2;
+margin-bottom: 2.5rem;
+font-size: 1.5rem;
+}
+ 
+ 
+/*USER PART*/
+
+
+.login-header{
+margin-bottom: 8.5rem;
+}
+
+
+.Input_user{
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.pass_part {
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.ver_pass{
+position: absolute;
+left: 350px;
+top: 50%;
+transform: translateY(-45%);
+color: #9daaf2;
+}
+
+.icons{
+filter: invert(0.7);
+position: absolute;
+left: 10px;
+top: 50%;
+transform: translateY(-45%);
+}
+.icons img{
+width:25px;
+oncontextmenu:return false;
+}
+
+.icon_header{
+filter: invert(0.7);
+position: absolute;
+left: 20px;
+top:15px;
+}
+
+.icon_header img{
+width:90px;
+}
+
+.ver_pass img{
+width:40px;
+}
+
+
+/*BOTONES */
+
+button{
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 6px;
+background: #ff6a3d;
+color: white;
+font-weight: 600;
+font-size: 1.7rem;
+cursor: pointer;
+transition: background 0.3s;
+max-width:400px;
+}
+
+/* */
+
+/*password vox 27-08-25*/
+
+/*END HERE*/
+
+.negocio_info{
+flex: 1;
+background: #f0f4f8;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+position: relative;
+}
+
+
+
+footer {
+height: 7rem;
+        }
+        
+footer p {
+font-size: 2.1rem;
+            
+        }
+}
+
+
+/* GRANDE PERO GRANDE */
+/*50*/
+@media (min-width: 1600px){
+
+  /*sweet alert*/
+.sweety-window{
+ width: 80% !important;
+ font-size: 3.0rem !important;
+ border-radius: 22px !important;
+}
+
+
+
+body{
+ display: flex;
+ min-height: 100vh;
+ overflow: hidden;
+}
+
+/*Aqui pondre todo lo referente al login box*/
+.login-box {
+ flex: 1;
+ background: #1a2238;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ 
+ 
+ padding: 2rem;
+ position: relative;
+ max-width:650px;
+}
+
+.login-box-content{
+ width: 100%;
+ max-width: 400px;
+ margin-left:100px;
+}
+
+
+
+/*Input part*/
+
+input {
+  padding: 15px 15px 15px 45px;
+  border: none;
+  border-radius: 6px;
+  background: #232e4e;
+  color: white;
+  font-size: 1rem;
+  min-width:400px;
+}
+        
+input:focus {
+outline: 2px solid #ff6a3d;
+}
+
+input::placeholder {
+color: #9daaf2;
+ }
+
+ h1,h2,h3,h4,h5 {
+	top:0;
+	font-weight: 600;
+	font-size: 2.2rem;
+/*color: #9daaf2;*/
+ }
+ 
+.sub-letra{
+color: #9daaf2;
+margin-bottom: 2.5rem;
+font-size: 1.1rem;
+}
+ 
+ 
+/*USER PART*/
+
+
+.login-header{
+margin-bottom: 8.5rem;
+}
+
+
+.Input_user{
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.pass_part {
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.ver_pass{
+position: absolute;
+left: 344px;
+top: 50%;
+transform: translateY(-45%);
+color: #9daaf2;
+}
+
+.icons{
+filter: invert(0.7);
+position: absolute;
+left: 10px;
+top: 50%;
+transform: translateY(-45%);
+}
+.icons img{
+width:25px;
+oncontextmenu:return false;
+}
+
+.icon_header{
+filter: invert(0.7);
+position: absolute;
+left: 20px;
+top:15px;
+}
+
+.icon_header img{
+width:90px;
+}
+
+.ver_pass img{
+width:35px;
+}
+
+
+/*BOTONES */
+
+button{
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 6px;
+background: #ff6a3d;
+color: white;
+font-weight: 600;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.3s;
+max-width:400px;
+}
+
+/* */
+
+/*password vox 27-08-25*/
+
+/*END HERE*/
+
+.negocio_info{
+flex: 1;
+background: #f0f4f8;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+position: relative;
+}
+
+
+
+footer {
+height: 7rem;
+        }
+        
+footer p {
+font-size: 2.1rem;
+            
+        }
+}
+
+
+/*PC AUN MIA 50%*/
+@media (min-width: 1920px) {
+    /*sweet alert*/
+.sweety-window{
+ width: 80% !important;
+ font-size: 3.0rem !important;
+ border-radius: 22px !important;
+}
+  
+
+
+body{
+ display: flex;
+ min-height: 100vh;
+ overflow: hidden;
+}
+
+/*Aqui pondre todo lo referente al login box*/
+.login-box {
+ flex: 1;
+ background: #1a2238;
+ color: white;
+ display: flex;
+ flex-direction: column;
+ 
+ 
+ padding: 2rem;
+ position: relative;
+ max-width:1000px;
+}
+
+.login-box-content{
+ width: 100%;
+ max-width: 400px;
+ margin-left:100px;
+}
+
+
+
+/*Input part*/
+
+input {
+  padding: 15px 15px 15px 45px;
+  border: none;
+  border-radius: 6px;
+  background: #232e4e;
+  color: white;
+  font-size: 1rem;
+  min-width:400px;
+}
+        
+input:focus {
+outline: 2px solid #ff6a3d;
+}
+
+input::placeholder {
+color: #9daaf2;
+ }
+
+ h1,h2,h3,h4,h5 {
+	top:0;
+	font-weight: 600;
+	font-size: 2.2rem;
+/*color: #9daaf2;*/
+ }
+ 
+.sub-letra{
+color: #9daaf2;
+margin-bottom: 2.5rem;
+font-size: 1.1rem;
+}
+ 
+ 
+/*USER PART*/
+
+
+.login-header{
+margin-bottom: 8.5rem;
+}
+
+
+.Input_user{
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.pass_part {
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.ver_pass{
+position: absolute;
+left: 344px;
+top: 50%;
+transform: translateY(-45%);
+color: #9daaf2;
+}
+
+.icons{
+filter: invert(0.7);
+position: absolute;
+left: 10px;
+top: 50%;
+transform: translateY(-45%);
+}
+.icons img{
+width:25px;
+oncontextmenu:return false;
+}
+
+.icon_header{
+filter: invert(0.7);
+position: absolute;
+left: 20px;
+top:15px;
+}
+
+.icon_header img{
+width:90px;
+}
+
+.ver_pass img{
+width:35px;
+}
+
+
+/*BOTONES */
+
+button{
+width: 100%;
+padding: 15px;
+border: none;
+border-radius: 6px;
+background: #ff6a3d;
+color: white;
+font-weight: 600;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.3s;
+max-width:400px;
+}
+
+/* */
+
+/*password vox 27-08-25*/
+
+/*END HERE*/
+
+.negocio_info{
+flex: 1;
+background: #f0f4f8;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+position: relative;
+}
+
+
+
+footer {
+height: 7rem;
+        }
+        
+footer p {
+font-size: 2.1rem;
+            
+        }
+
+
+}
+
+
+/*PC AUN MIA 30%*/
+@media (min-width: 2560px) {
+  /*sweet alert*/
+.sweety-window{
+ width: 80% !important;
+ font-size: 3.0rem !important;
+ border-radius: 22px !important;
+}
+
+
+    /* Estilos para pantallas de 1600px en adelante */
+body, html {
+  margin: 4;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; /* Fondo claro para contrastar */
+  color: black;
+}
+
+
+/*Aqui pondre todo lo referente al login box*/
+.login-box {
+  position: fixed; /* Fija la caja en la pantalla */
+  right: 1px;     /* Ajusta la distancia desde el borde derecho */
+  top: 50%;        /* Lo centra verticalmente */
+  transform: translateY(-50%); /* Ajuste fino para centrado vertical */
+  
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center;   /* Centra horizontalmente los elementos internos */
+  justify-content: center; /* Centra verticalmente los elementos internos */
+  
+  width: 100%;    /* Ancho más adecuado para un sidebar */
+  height: 100%;    /* Altura automática según el contenido */
+  min-height: 400px; /* Altura mínima */
+  padding: 50px;   /* Espaciado interno */
+  
+  background-color: rgba(0,0,0,0.9);
+  border: 3px solid #888;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  /*border-radius: 10px;  Bordes redondeados */
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 10px; /* Más espacio debajo del título */
+}
+
+.login-box label {
+display: inline-block;
+align-items: center;
+font-size: 4.00rem;
+margin: 30px 0;   /* Margen solo arriba y abajo */
+}
+
+.login-box input {
+  width: 70%;       /* Ancho relativo al contenedor */
+  padding: 30px;
+  margin: 30px 0;   /* Margen solo arriba y abajo */
+  border-radius: 20px;
+  border: none;     /* Quita el borde por defecto */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 3.50rem;
+}
+
+
+
+.login-box button {
+  /*display: inline-block;*/
+  margin-top:20px;
+  margin-left:80px;
+  width: 30%;
+  padding: 40px;
+  /*margin-top: 100px;  Espacio arriba del botón */
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 50px;
+  transition: background-color 0.3s; /* Efecto hover suave */
+}
+
+.login-box button:hover {
+  background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
+
+
+.login-box form{
+border-left: 2px solid white; /* Estilo de la línea */
+margin-top:3%;
+margin-left:30%;
+width: 100%;
+height: 100%;
+}
+
+
+.login-box hr {
+	display: block;
+    border: none;
+    border-left: 2px solid black; /* Estilo de la línea */
+    height: 100%; /* Altura de la línea */
+    position: absolute;
+    left: 50%; /* Centra la línea horizontalmente */
+    bottom: 0; /* Comienza desde la parte inferior */
+    background-color:white;
+    z-index:100000px;
+}
+
+
+.bottones{
+display:flex;
+gap: 5px;
+}
+/*END HERE*/
+
+
+header{
+	display: inline-block;
+	background: #fee;
+    padding: 1rem;
+    margin-right: 20px;
+    vertical-align: top; /* alinea en la misma línea de base */
+}
+
+header h1,h2,h3,h4,h5{
+	color:black;
+}
+
+
+
+footer {
+height: 7rem;
+        }
+        
+footer p {
+font-size: 2.1rem;
+            
+        }
+
+}
+
+@media (min-width: 3840px) {
+    /* Estilos para pantallas de 3840px en adelante */
+  /*sweet alert*/
+.sweety-window{
+ width: 80% !important;
+ font-size: 3.0rem !important;
+ border-radius: 22px !important;
+}
+
+}
+
+@media (min-width: 5120px) {
+    /* Estilos para pantallas de 5120px en adelante */
+  /*sweet alert*/
+.sweety-window{
+ width: 80% !important;
+ font-size: 3.0rem !important;
+ border-radius: 22px !important;
+}
+
+}

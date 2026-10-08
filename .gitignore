@@ -1,0 +1,17 @@
+# ENDING FILES
+*.sql
+*.db
+*.zip
+*.sh
+*.txt
+uni.jpg
+*.jpg
+connect_old.php
+
+# FOlders
+Respaldos/
+recoou/
+idk/
+respaldo/
+old/
+

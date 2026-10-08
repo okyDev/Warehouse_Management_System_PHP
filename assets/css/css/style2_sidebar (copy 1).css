@@ -1,0 +1,118 @@
+:root {
+            --sidebar-bg: #1a2238;
+            --sidebar-accent: #ff6a3d;
+            --toolbar-bg: #ffffff;
+            --content-bg: #f5f7fa;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+.sidebar {
+  width: 250px;
+  background: #34495e;
+  color: white;
+  padding: 1.5rem 0;
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+}
+
+
+
+
+.sidebar-category {
+						padding: 0.5rem 1.5rem;
+            margin-top: 1.5rem;
+            color: #9daaf2;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+    /*font-size: 1.25rem;  Tamaño de fuente más grande 
+    font-weight: 600; /* Negrita 
+    color: #343a40; /* Color oscuro 
+    margin-bottom: 0.5rem; /* Espacio debajo de la categoría */
+}
+
+.sidebar-item {
+						padding: 0.8rem 1.5rem;
+            display: flex;
+            align-items: center;
+            color: #cbd5e0;
+            text-decoration: none;
+/*            transition: all 0.3s;*/
+            border-left: 4px solid transparent;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+
+		/*
+    display: block; /* Hace que los ítems se comporten como bloques 
+    padding: 0.5rem 1rem; /* Espaciado interno 
+    color: #495057; /* Color del texto 
+    text-decoration: none; /* Sin subrayado 
+    border-radius: 0.25rem; /* Bordes redondeados 
+    transition: background-color 0.2s; /* Transición suave para el fondo */
+}
+
+.sidebar-item:hover {
+    background: #232e4e;
+    color: white;
+    border-left: 4px solid var(--sidebar-accent);
+}
+
+.sidebar-item.active {
+            background: #232e4e;
+            color: white;
+            border-left: 4px solid var(--sidebar-accent);
+        }
+        
+.sidebar-item i {
+            margin-right: 0.8rem;
+            width: 20px;
+            text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .submenu.expanded {
+            max-height: 500px;
+        }
+        
+        .submenu-item {
+            padding: 0.8rem 1.5rem 0.8rem 3rem;
+            display: flex;
+            align-items: center;
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        .submenu-item:hover {
+            background: #232e4e;
+            color: white;
+        }
+        
+        .submenu-item.active {
+            color: var(--sidebar-accent);
+            font-weight: 500;
+        }
+        

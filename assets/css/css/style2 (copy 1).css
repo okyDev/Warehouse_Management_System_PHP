@@ -1,0 +1,420 @@
+/* new ajust global in a way to say */
+:root {
+            --sidebar-bg: #1a2238;
+            --sidebar-accent: #ff6a3d;
+            --toolbar-bg: #ffffff;
+            --content-bg: #f5f7fa;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+
+/*
+* {
+  box-sizing: border-box;
+}
+
+
+body, html {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-areas: 
+        "toolbar"
+        "menu";
+    height: 100%; /* Asegura que el body ocupa toda la pantalla *
+    width: 100%; /* Asegura que el body ocupa todo el ancho *
+    margin: 0; /* Elimina márgenes por defecto 
+    justify-content:wrap;
+}
+
+.toolbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: toolbar;
+    z-index: 1000;
+    background: #2c3e50;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 0 1.5rem;
+    height: 10vh; /* Altura fija para el toolbar 
+    width: 100%; /* Asegura el ancho completo 
+}
+
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.user-info {
+    max-width: 70px;
+}
+
+
+
+
+.box {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column; /* Permite una distribución vertical *
+    height: calc(100vh - 10vh); /* Altura restante después del toolbar 
+    overflow-y: auto; /* Permite el desplazamiento si hay demasiada información *
+    padding: 1rem; /* Agrega espacio interno al menú *
+}
+
+
+
+.box-main {
+		margin-left:30vh;
+		flex:2;
+     /* Ocupa el espacio restante del menú *
+    padding: 1rem; /* Espacio interno del contenido *
+    background-color: #ffffff; /* Fondo blanco para el contenido *
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional 
+    min-height:190vh;
+    max-height:200vh;
+    
+}
+
+
+
+/*
+
+body, html {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-areas: 
+        "toolbar"
+        "menu";
+    max-height: 100vh;
+    max-width: 100vh;
+    margin: 0; /* Asegúrate de que no hay margen por defecto *
+}
+
+.toolbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: toolbar;
+    z-index: 1000;
+    background: #2c3e50;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 10vh; /* Cambié max-height a height *
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.user-info {
+    max-width: 70px;
+}
+
+.box {
+    grid-area: menu;
+    margin-top: 50vh; /* Esto agrega espacio por debajo del toolbar */
+    /* Ahora usarás 'margin-top' en lugar de 'position: fixed;' para que el menú esté debajo del toolbar 
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 90vh; /* Ajusta para el espacio del toolbar *
+    overflow-y: auto; /* Permite scrolling si el contenido es demasiado *
+    align-items: center;
+    justify-content: space-between; 
+}
+
+
+
+
+ {
+    /*overflow-y: auto;  Scroll vertical 
+    position:absolute;
+    */
+   
+    /* Ancho de la barra lateral 
+     * transform: traslate(500vh,20px);
+     left:calc(100% - 168vh);
+     
+     
+     
+     top:12vh;
+    left:calc(100% - 163vh);
+     *
+		background-color:black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*Barra sidebar
+.box {
+	display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+/*
+ display: flex;
+ min-height: 100vh;
+ min-width: 100vh;
+ flex-direction: column;
+ min-height: 100vh;
+				margin:0px;
+				
+}
+
+.sidebar {
+   
+   grid-area: sidebar;
+            background: var(--sidebar-bg);
+            color: white;
+            padding: 1.5rem 0;
+            height: 100%;
+            overflow-y: auto;
+   /* background: var(--sidebar-bg);
+    color: white;
+    padding: 1.5rem 0; /* Puedes ajustar el padding si es necesario 
+    width: 240px; /* Ancho de la barra lateral /
+    min-height: 100vh; /* Altura mínima 
+    margin: 0; /* Elimina el margen 
+    left: 0; /* Alinea a la izquierda 
+}
+
+
+.dinamic_main{
+flex: 1;
+padding: 2rem;
+overflow-y: auto; /* Scroll vertical 
+}
+*/
+
+
+
+/* SEARCH VAR 1
+.search_bar{
+display: flex; /* Alinear en fila 
+gap:1px;
+text-align: center;
+}
+
+
+.el1{
+display:grid;
+margin:0;
+}
+
+
+.el2{
+display:grid;
+margin:0;
+}
+
+
+
+.el1 img{
+width:30px;
+filter: invert(0.7);
+}
+
+
+
+.grid{
+position:relative;
+}
+
+*/
+
+
+/* VOX   */  
+ .search-container {
+		display:grid;
+    margin-bottom:10px;
+    
+ /* 
+  * display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap:5px;
+grid-template-columns: repeat(3, 1fr);
+  * justify-content: center;
+  background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+  * */
+           
+        }
+        
+.row_crud{
+display:flex;
+max-width:100vh;
+gap:20px;
+
+}
+
+/*  COL1  */       
+        .search-bar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .search-input {
+            flex: 1;
+            /*)padding: 12px 15px;
+           border-radius: 4px 0 0 4px;
+             * */
+            max-width:50vh;
+            border: 2px solid #ddd;
+           
+            font-size: 16px;
+        }
+        
+        .search-bar img{
+				width:30px;
+				filter: invert(0.7);
+        }
+        
+        .search-input::placeholder{
+        text-align: center;
+        }
+        
+        
+         .search-select {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-left: none;
+            /*background-color: #f8f9fa;
+            
+            border-radius: 0 4px 4px 0;
+            */
+            
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+
+/* Col2   */  
+        
+        
+         .option-group {  
+            min-width: 100px;
+        }
+
+        .option-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+            
+        }
+        
+        
+        
+
+/*  COL3  */  
+        
+        .option-group select, .option-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        
+        
+         .search-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+
+/*  COL4  */        
+       
+       .price-range {
+            display: flex;
+            gap: 1px;
+            max-width:1vh;
+        }
+        
+        .price-range input {
+            flex: 1;
+            
+        }
+
+
+/* COL5   */  
+       
+        .search-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .search-button:hover {
+            background-color: #2980b9;
+        }
+
+
+
+
+
+
+
+/* Estado Normal: Visible y activo */
+#activado {
+    transition: all 0.3s ease; /* Transición suave para el efecto */
+    pointer-events: auto; /* Permite interacciones con el mouse/teclado */
+    opacity: 1;
+    filter: blur(0px);
+}
+
+/* Estado Desactivado: Poco visible y sin interacción */
+#desactivado {
+    pointer-events: none; /* IMPIDE CLICS y TABULACIÓN */
+    opacity: 0.4; /* Lo hace semi-transparente */
+    filter: blur(2px); /* Agrega un leve desenfoque */
+    transform: scale(0.98); /* Opcional: un pequeño efecto de encogimiento */
+}
+
+
+/* COLORES */
+.fondo-gris {
+    background-color: #1f1f1f; /* Gris oscuro */
+    color: white; /* Color del texto que contrasta */
+}
+
+.fondo-gris2 {
+    background-color: #3a3c41;
+    color: white; /* Color del texto que contrasta */
+}
+
+.fondo-gris3{
+background-color: #535e65;
+color: white; /* Color del texto que contrasta */
+}
+
+.fondo-gris4{
+background-color: #6b8288;
+color: white; /* Color del texto que contrasta */
+}
+
